@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga center form</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">Serenity Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the yoga center</p>
+  <form id="survey-form">
+
+    <div class="form-fields">
+      <label id="name-label" for="name">Name</label>
+      <input class="box" id="name" type="text" placeholder="enter your name" required>
+    </div>
+
+    <div class="form-fields">
+      <label id="email-label" for="email">Email</label>
+      <input class="box" id="email" type="email" placeholder="enter your email" required>
+    </div>
+
+    <div class="form-fields">
+      <label id="number-label" for="number">Age</label>
+      <input class="box" id="number" min="12" max="200" type="number" placeholder="age" value="">
+    </div>
+
+    <div class="form-fields">
+      <label>Gender</label>
+      <div>
+        <input type="radio" id="male" value="male" name="gender">
+        <label for="male">Male</label>
+      </div>
+      <div>
+        <input type="radio" id="female" value="female" name="gender">
+        <label for="female">Female</label>
+      </div>
+    </div>
+
+    <div class="form-fields">
+      <label for="dropdown">Choose your reason for joining Serenity</label>
+      <select id="dropdown" class="box">
+        <option value="" disabled selected hidden>select your reason</option>
+        <option value="physical fitness">Physical Fitness</option>
+        <option value="protection from injury">Protection From Injury</option>
+        <option value="spiritual benefits">Spiritual Benefits</option>
+        <option value="stress management">Stress Management</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-fields">
+      <label>What do you like about Serenity?</label>
+      <div><input type="checkbox" id="option1" value="Experienced instructors">
+        <label for="option1">Experienced instructors</label>
+      </div>
+      <div><input type="checkbox" id="option2" value="Clean and peaceful environment">
+        <label for="option2">Clean and peaceful environment</label>
+      </div>
+      <div><input type="checkbox" id="option3" value="Convenient class schedule">
+        <label for="option3">Convenient class schedule</label>
+      </div>
+      <div><input type="checkbox" id="option4" value="Effective stress relief">
+        <label for="option4">Effective stress relief</label>
+      </div>
+      <div><input type="checkbox" id="option5" value="Physical fitness benefits">
+        <label for="option5">Physical fitness benefits</label>
+      </div>
+      <div><input type="checkbox" id="option6" value="Mindfulness and meditation sessions">
+        <label for="option6">Mindfulness and meditation sessions</label>
+      </div>
+      <div><input type="checkbox" id="option7" value="Affordable pricing options">
+        <label for="option7">Affordable pricing options</label>
+      </div>
+      <div><input type="checkbox" id="option8" value="Welcoming community atmosphere">
+        <label for="option8">Welcoming community atmosphere</label>
+      </div>
+
+    </div>
+
+    <div class="form-fields">
+      <label for="textarea">What do you want to be improved at Serenity?</label>
+      <textarea class="box" rows="4" cols="50" id="textarea" placeholder="enter your suggesions here"></textarea>
+    </div>
+
+    <button id="submit" >Submit</submit>
+
+  </form>
+</body>
+
+</html>
